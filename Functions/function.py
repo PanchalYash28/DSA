@@ -13,12 +13,12 @@ def greet():
     print('Hello World!')
 
 # call the function
-greet()
+greet()  # Output: Hello World!
 
-print('Outside function')
+print('Outside function')  # Output: Outside function
 
 """ Note: When writing a function, pay attention to indentation, which are the spaces at the start of a code line.
-In the above code, the print() statement is indented to show it's part of the function body, distinguishing the function's definition from its body.""" 
+In the above code, the print() statement is indented to show it's part of the function body, distinguishing the function's definition from its body. """
 
 
 """ Example: Python Function Call """
@@ -27,9 +27,9 @@ def greet():
     print('Hello World!')
 
 # call the function
-greet()
+greet()  # Output: Hello World!
 
-print('Outside function')
+print('Outside function')  # Output: Outside function
 
 
 """ Ex: 3 Python Function Arguments """
@@ -38,7 +38,7 @@ def greet(name):
     print("Hello", name)
 
 # pass argument
-greet("John")
+greet("John")  # Output: Hello John
 
 """ Example: Function to Add Two Numbers """
 
@@ -48,7 +48,7 @@ def add_numbers(num1, num2):
     print("Sum: ", sum)
 
 # function call with two values
-add_numbers(5, 4)
+add_numbers(5, 4)  # Output: Sum: 9
 
 
 """" Parameter vs Arguments"""
@@ -57,6 +57,7 @@ def print_age(age):  # age is a parameter
     print(age)
 
 print_age(25)  # 25 is an argument
+# Output: 25
 
 
 
@@ -66,8 +67,7 @@ def future_function():
     pass
 
 # this will execute without any action or error
-future_function()  
-
+future_function()  # No output
 
 
 """ Python Library Functions"""
@@ -82,12 +82,12 @@ import math
 # sqrt computes the square root
 square_root = math.sqrt(4)
 
-print("Square Root of 4 is",square_root)
+print("Square Root of 4 is", square_root)  # Output: Square Root of 4 is 2.0
 
 # pow() comptes the power
 power = pow(2, 3)
 
-print("2 to the power 3 is",power)
+print("2 to the power 3 is", power)  # Output: 2 to the power 3 is 8
 
 """ User Defined Vs Standard Library Functions """
 # In Python, functions are divided into two categories: user-defined functions and standard library functions. These two differ in several ways:
@@ -105,7 +105,6 @@ print("2 to the power 3 is",power)
 # These functions cover a wide range of common tasks such as mathematics, file operations, working with strings, etc.
 
 
-
 """ Default Arguments in Functions """
 # Python allows functions to have default argument values. 
 # Default arguments are used when no explicit values are passed to these parameters during a function call.
@@ -114,10 +113,10 @@ def greet(name, message="Hello"):
     print(message, name)
 
 # calling function with both arguments
-greet("Alice", "Good Morning")
+greet("Alice", "Good Morning")  # Output: Good Morning Alice
 
 # calling function with only one argument
-greet("Bob")
+greet("Bob")  # Output: Hello Bob
 
 
 """ Using *args and **kwargs in Functions """
@@ -131,7 +130,7 @@ def add_all(*numbers):
     return sum(numbers)
 
 # pass any number of arguments
-print(add_all(1, 2, 3, 4))   
+print(add_all(1, 2, 3, 4))  # Output: 10
 
 
 # Using **kwargs allows the function to accept any number of keyword arguments.
@@ -142,33 +141,35 @@ def greet(**words):
         print(f"{key}: {value}")
 
 # pass any number of keyword arguments
-greet(name="John", greeting="Hello")
+greet(name="John", greeting="Hello")  
+# Output:
+# name: John
+# greeting: Hello
+
 
 """ Example 1: Python Function Arguments """ 
 def add_numbers(a, b):
     sum = a + b
     print('Sum:', sum)
 
-add_numbers(2, 3)
-
-# Output: Sum: 5
+add_numbers(2, 3)  # Output: Sum: 5
 
 
 """ Example 2: Function Argument with Default Values """
 
-def add_numbers( a = 7,  b = 8):
+def add_numbers(a = 7, b = 8):
     sum = a + b
     print('Sum:', sum)
 
 
 # function call with two arguments
-add_numbers(2, 3)
+add_numbers(2, 3)  # Output: Sum: 5
 
-#  function call with one argument
-add_numbers(a = 2)
+# function call with one argument
+add_numbers(a = 2)  # Output: Sum: 10
 
 # function call with no arguments
-add_numbers()
+add_numbers()  # Output: Sum: 15
 
 
 """ Example 3: Python Keyword Argument """
@@ -177,7 +178,11 @@ def display_info(first_name, last_name):
     print('First Name:', first_name)
     print('Last Name:', last_name)
 
-display_info(last_name = 'Cartman', first_name = 'Eric')
+display_info(last_name = 'Cartman', first_name = 'Eric')  
+# Output:
+# First Name: Eric
+# Last Name: Cartman
+
 
 """ Example 4: Python Function With Arbitrary Arguments """
 # Sometimes, we do not know in advance the number of arguments that will be passed into a function. 
@@ -196,7 +201,7 @@ def find_sum(*numbers):
     print("Sum = ", result)
 
 # function call with 3 arguments
-find_sum(1, 2, 3)
+find_sum(1, 2, 3)  # Output: Sum = 6
 
 # function call with 2 arguments
-find_sum(4, 9)
+find_sum(4, 9)  # Output: Sum = 13
