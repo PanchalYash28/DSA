@@ -48,5 +48,6 @@ Contains the `main` method to test all functionalities.
 java LinkedList
 
 output :-
+
 ![image](https://github.com/user-attachments/assets/6902574c-e3a2-41e7-95c7-d0920167ffae)
 
